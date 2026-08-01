@@ -50,9 +50,9 @@ nav {
 }
 
 .logo {
-    font-size: 28px;
-    font-weight: bold;
-    color: white;
+    width: 120px;
+    height: auto;
+    display:block;
 }
 
 nav ul {
