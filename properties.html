@@ -7,83 +7,148 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <nav>
+    <div class="logo">
+        RwaNest
+    </div>
 
-<div class="logo">
-  <a href="index.html">
-    <img src="images/rwanest-logo.jpeg"
-alt="RwaNest">
-  </a>
-</div>
-
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="properties.html">Properties</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="properties.html">Properties</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
 </nav>
+
 
 <section class="properties">
 
-<h1>Available Properties</h1>
+    <h1>Find Your Home</h1>
 
-<div class="property-grid">
+    <!-- FILTER AREA -->
+    <div class="filters">
 
-<div class="card">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search by property or location..."
+        >
 
-<img src="images/house1.png" alt="House">
+        <select id="typeFilter">
+            <option value="all">All Property Types</option>
+            <option value="house">House</option>
+            <option value="apartment">Apartment</option>
+            <option value="villa">Villa</option>
+        </select>
 
-<h2>Luxury Family House</h2>
+        <select id="purposeFilter">
+            <option value="all">Rent or Buy</option>
+            <option value="rent">For Rent</option>
+            <option value="sale">For Sale</option>
+        </select>
 
-<p><strong>Location:</strong> Kigali</p>
+        <select id="bedroomFilter">
+            <option value="all">Any Bedrooms</option>
+            <option value="1">1+ Bedroom</option>
+            <option value="2">2+ Bedrooms</option>
+            <option value="3">3+ Bedrooms</option>
+            <option value="4">4+ Bedrooms</option>
+            <option value="5">5+ Bedrooms</option>
+        </select>
 
-<p><strong>Price:</strong> £120,000</p>
+        <select id="sortFilter">
+            <option value="default">Sort By</option>
+            <option value="low">Price: Low to High</option>
+            <option value="high">Price: High to Low</option>
+        </select>
 
-<p>4 Bedrooms • 3 Bathrooms</p>
+        <button id="resetButton">Reset Filters</button>
 
-<a href="property.html" class="btn">View Details</a>
+    </div>
 
-</div>
 
-<div class="card">
+    <!-- NUMBER OF RESULTS -->
+    <p id="resultCount"></p>
 
-<img src="images/house2.png" alt="House">
 
-<h2>Modern Apartment</h2>
+    <!-- PROPERTY CARDS -->
+    <div class="property-grid" id="propertyGrid">
 
-<p><strong>Location:</strong> Remera</p>
+        <div class="card"
+             data-name="Luxury Family House"
+             data-location="Kigali"
+             data-type="house"
+             data-purpose="sale"
+             data-price="120000"
+             data-bedrooms="4">
 
-<p><strong>Price:</strong> £650/month</p>
+            <img src="images/house1.png" alt="Luxury Family House">
 
-<p>2 Bedrooms • 1 Bathroom</p>
+            <h2>Luxury Family House</h2>
 
-<a href="property.html" class="btn">View Details</a>
+            <p><strong>Location:</strong> Kigali</p>
 
-</div>
+            <p><strong>Price:</strong> £120,000</p>
 
-<div class="card">
+            <p>4 Bedrooms • 3 Bathrooms</p>
 
-<img src="images/house3.png" alt="House">
+            <a href="property.html" class="btn">View Details</a>
 
-<h2>Beautiful Villa</h2>
+        </div>
 
-<p><strong>Location:</strong> Kicukiro</p>
 
-<p><strong>Price:</strong> £250,000</p>
+        <div class="card"
+             data-name="Modern Apartment"
+             data-location="Remera"
+             data-type="apartment"
+             data-purpose="rent"
+             data-price="650"
+             data-bedrooms="2">
 
-<p>5 Bedrooms • 4 Bathrooms</p>
+            <img src="images/house2.png" alt="Modern Apartment">
 
-<a href="property.html" class="btn">View Details</a>
+            <h2>Modern Apartment</h2>
 
-</div>
+            <p><strong>Location:</strong> Remera</p>
 
-</div>
+            <p><strong>Price:</strong> £650/month</p>
+
+            <p>2 Bedrooms • 1 Bathroom</p>
+
+            <a href="property.html" class="btn">View Details</a>
+
+        </div>
+
+
+        <div class="card"
+             data-name="Beautiful Villa"
+             data-location="Kicukiro"
+             data-type="villa"
+             data-purpose="sale"
+             data-price="250000"
+             data-bedrooms="5">
+
+            <img src="images/house3.png" alt="Beautiful Villa">
+
+            <h2>Beautiful Villa</h2>
+
+            <p><strong>Location:</strong> Kicukiro</p>
+
+            <p><strong>Price:</strong> £250,000</p>
+
+            <p>5 Bedrooms • 4 Bathrooms</p>
+
+            <a href="property.html" class="btn">View Details</a>
+
+        </div>
+
+    </div>
 
 </section>
+
 
 <script src="js/script.js"></script>
 
