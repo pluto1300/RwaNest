@@ -878,5 +878,7 @@ footer p {
     .contact-form {
         padding: 25px;
     }
-
+.filters {
+    background: red !important;
+}
 }
