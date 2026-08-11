@@ -2,11 +2,6 @@
    RWANEST - MAIN STYLESHEET
 ========================================= */
 
-
-/* =========================================
-   GENERAL
-========================================= */
-
 * {
     margin: 0;
     padding: 0;
@@ -52,7 +47,13 @@ nav {
 .logo {
     width: 120px;
     height: auto;
-    display:block;
+    display: block;
+}
+
+.logo a {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 nav ul {
@@ -150,7 +151,7 @@ nav ul li a:hover {
 .properties h1 {
     text-align: center;
     font-size: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
     color: #222;
 }
 
@@ -165,720 +166,699 @@ nav ul li a:hover {
 
 
 /* =========================================
-   PROPERTY CARDS
+   PROPERTY FILTERS
 ========================================= */
 
-.card {
-    background: white;
-
-    border-radius: 12px;
-
-    overflow: hidden;
-
-    box-shadow:
-        0 5px 20px rgba(0, 0, 0, 0.10);
-
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-6px);
-
-    box-shadow:
-        0 10px 25px rgba(0, 0, 0, 0.15);
-}
-
-.card img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-}
-
-.card h2 {
-    font-size: 22px;
-    margin: 20px 20px 10px;
-    color: #222;
-}
-
-.card p {
-    margin: 8px 20px;
-    color: #555;
-}
-
-.card .btn {
-    margin: 20px;
-}
-
-
-/* =========================================
-   PROPERTY DETAILS PAGE
-========================================= */
-
-.property-details {
-    max-width: 1100px;
-
-    margin: 60px auto;
-
-    padding: 0 20px;
-}
-
-.property-details img {
-    width: 100%;
-    max-height: 550px;
-
-    object-fit: cover;
-
-    border-radius: 12px;
-}
-
-.property-info {
-    background: white;
-
-    padding: 30px;
-
-    margin-top: 25px;
-
-    border-radius: 12px;
-
-    box-shadow:
-        0 5px 20px rgba(0, 0, 0, 0.08);
-}
-
-.property-info h1 {
-    font-size: 36px;
-    margin-bottom: 15px;
-}
-
-.property-info p {
-    margin: 10px 0;
-}
-
-
-/* =========================================
-   ABOUT PAGE
-========================================= */
-
-.about {
-    max-width: 1000px;
-
-    margin: 70px auto;
-
-    padding: 0 25px;
-}
-
-.about h1 {
-    text-align: center;
-
-    font-size: 42px;
-
-    margin-bottom: 30px;
-
-    color: #222;
-}
-
-.about-content {
-    background: white;
-
-    padding: 40px;
-
-    border-radius: 12px;
-
-    box-shadow:
-        0 5px 20px rgba(0, 0, 0, 0.08);
-}
-
-.about-content h2 {
-    margin-top: 25px;
-    margin-bottom: 10px;
-
-    color: #0b5ed7;
-}
-
-.about-content p {
-    margin-bottom: 15px;
-}
-
-
-/* =========================================
-   CONTACT PAGE
-========================================= */
-
-.contact {
-    max-width: 900px;
-
-    margin: 70px auto;
-
-    padding: 0 25px;
-}
-
-.contact h1 {
-    text-align: center;
-
-    font-size: 42px;
-
-    margin-bottom: 40px;
-}
-
-.contact-form {
-    background: white;
-
-    padding: 40px;
-
-    border-radius: 12px;
-
-    box-shadow:
-        0 5px 20px rgba(0, 0, 0, 0.08);
-}
-
-.contact-form label {
-    display: block;
-
-    margin-bottom: 7px;
-
-    font-weight: bold;
-}
-
-.contact-form input,
-.contact-form textarea,
-.contact-form select {
-    width: 100%;
-
-    padding: 13px;
-
-    margin-bottom: 20px;
-
-    border: 1px solid #ccc;
-
-    border-radius: 6px;
-
-    font-size: 16px;
-}
-
-.contact-form textarea {
-    height: 150px;
-
-    resize: vertical;
-}
-
-.contact-form button {
-    border: none;
-
-    cursor: pointer;
-
-    font-size: 16px;
-}
-
-
-/* =========================================
-   FOOTER
-========================================= */
-
-footer {
-    background: #222;
-
-    color: white;
-
-    text-align: center;
-
-    padding: 30px;
-
-    margin-top: 50px;
-}
-
-footer p {
-    margin: 5px 0;
-}
-
-
-/* =========================================
-   MOBILE RESPONSIVE DESIGN
-========================================= */
-
-@media (max-width: 768px) {
-
-    nav {
-        flex-direction: column;
-
-        gap: 15px;
-
-        padding: 20px;
-    }
-
-    nav ul {
-        gap: 15px;
-
-        flex-wrap: wrap;
-
-        justify-content: center;
-    }
-
-    .hero h1 {
-        font-size: 40px;
-    }
-
-    .hero p {
-        font-size: 18px;
-    }
-
-    .properties {
-        padding: 50px 20px;
-    }
-
-    .properties h1 {
-        font-size: 32px;
-    }
-
-    .about h1,
-    .contact h1 {
-        font-size: 32px;
-    }
-
-    .about-content,
-    .contact-form {
-        padding: 25px;
-    }
-
-}
-/* =========================================
-   RWANEST - MAIN STYLESHEET
-========================================= */
-
-
-/* =========================================
-   GENERAL
-========================================= */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f5f7fa;
-    color: #333;
-    line-height: 1.6;
-}
-
-a {
-    text-decoration: none;
-}
-
-img {
-    max-width: 100%;
-    display: block;
-}
-
-
-/* =========================================
-   NAVIGATION
-========================================= */
-
-nav {
-    background: #0b5ed7;
-    color: white;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 20px 10%;
-}
-
-.logo {
-    width: 120px;
-    height: auto;
-    display:block;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 30px;
-}
-
-nav ul li a {
-    color: white;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-nav ul li a:hover {
-    color: #ffcc00;
-}
-
-
-/* =========================================
-   BUTTONS
-========================================= */
-
-.btn {
-    display: inline-block;
-
-    background: #ffcc00;
-    color: #222;
-
-    padding: 13px 28px;
-
-    border-radius: 7px;
-
-    font-weight: bold;
-
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: #e6b800;
-    transform: translateY(-2px);
-}
-
-
-/* =========================================
-   HOME PAGE - HERO
-========================================= */
-
-.hero {
-    min-height: 90vh;
-
-    display: flex;
-    flex-direction: column;
-
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-
-    color: white;
-
-    padding: 30px;
-
-    background:
-        linear-gradient(
-            rgba(0, 0, 0, 0.55),
-            rgba(0, 0, 0, 0.55)
-        ),
-        url("../images/hero.jpg");
-
-    background-size: cover;
-    background-position: center;
-}
-
-.hero h1 {
-    font-size: 60px;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 21px;
-    max-width: 650px;
-    margin-bottom: 30px;
-}
-
-
-/* =========================================
-   PROPERTIES PAGE
-========================================= */
-
-.properties {
-    padding: 70px 10%;
-}
-
-.properties h1 {
-    text-align: center;
-    font-size: 40px;
-    margin-bottom: 50px;
-    color: #222;
-}
-
-.property-grid {
-    display: grid;
-
-    grid-template-columns:
-        repeat(auto-fit, minmax(280px, 1fr));
-
-    gap: 30px;
-}
-
-
-/* =========================================
-   PROPERTY CARDS
-========================================= */
-
-.card {
-    background: white;
-
-    border-radius: 12px;
-
-    overflow: hidden;
-
-    box-shadow:
-        0 5px 20px rgba(0, 0, 0, 0.10);
-
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-6px);
-
-    box-shadow:
-        0 10px 25px rgba(0, 0, 0, 0.15);
-}
-
-.card img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-}
-
-.card h2 {
-    font-size: 22px;
-    margin: 20px 20px 10px;
-    color: #222;
-}
-
-.card p {
-    margin: 8px 20px;
-    color: #555;
-}
-
-.card .btn {
-    margin: 20px;
-}
-
-
-/* =========================================
-   PROPERTY DETAILS PAGE
-========================================= */
-
-.property-details {
-    max-width: 1100px;
-
-    margin: 60px auto;
-
-    padding: 0 20px;
-}
-
-.property-details img {
-    width: 100%;
-    max-height: 550px;
-
-    object-fit: cover;
-
-    border-radius: 12px;
-}
-
-.property-info {
-    background: white;
-
-    padding: 30px;
-
-    margin-top: 25px;
-
-    border-radius: 12px;
-
-    box-shadow:
-        0 5px 20px rgba(0, 0, 0, 0.08);
-}
-
-.property-info h1 {
-    font-size: 36px;
-    margin-bottom: 15px;
-}
-
-.property-info p {
-    margin: 10px 0;
-}
-
-
-/* =========================================
-   ABOUT PAGE
-========================================= */
-
-.about {
-    max-width: 1000px;
-
-    margin: 70px auto;
-
-    padding: 0 25px;
-}
-
-.about h1 {
-    text-align: center;
-
-    font-size: 42px;
-
-    margin-bottom: 30px;
-
-    color: #222;
-}
-
-.about-content {
-    background: white;
-
-    padding: 40px;
-
-    border-radius: 12px;
-
-    box-shadow:
-        0 5px 20px rgba(0, 0, 0, 0.08);
-}
-
-.about-content h2 {
-    margin-top: 25px;
-    margin-bottom: 10px;
-
-    color: #0b5ed7;
-}
-
-.about-content p {
-    margin-bottom: 15px;
-}
-
-
-/* =========================================
-   CONTACT PAGE
-========================================= */
-
-.contact {
-    max-width: 900px;
-
-    margin: 70px auto;
-
-    padding: 0 25px;
-}
-
-.contact h1 {
-    text-align: center;
-
-    font-size: 42px;
-
-    margin-bottom: 40px;
-}
-
-.contact-form {
-    background: white;
-
-    padding: 40px;
-
-    border-radius: 12px;
-
-    box-shadow:
-        0 5px 20px rgba(0, 0, 0, 0.08);
-}
-
-.contact-form label {
-    display: block;
-
-    margin-bottom: 7px;
-
-    font-weight: bold;
-}
-
-.contact-form input,
-.contact-form textarea,
-.contact-form select {
-    width: 100%;
-
-    padding: 13px;
-
-    margin-bottom: 20px;
-
-    border: 1px solid #ccc;
-
-    border-radius: 6px;
-
-    font-size: 16px;
-}
-
-.contact-form textarea {
-    height: 150px;
-
-    resize: vertical;
-}
-
-.contact-form button {
-    border: none;
-
-    cursor: pointer;
-
-    font-size: 16px;
-}
-
-
-/* =========================================
-   FOOTER
-========================================= */
-
-footer {
-    background: #222;
-
-    color: white;
-
-    text-align: center;
-
-    padding: 30px;
-
-    margin-top: 50px;
-}
-
-footer p {
-    margin: 5px 0;
-}
-
-
-/* =========================================
-   MOBILE RESPONSIVE DESIGN
-========================================= */
-
-@media (max-width: 768px) {
-
-    nav {
-        flex-direction: column;
-
-        gap: 15px;
-
-        padding: 20px;
-    }
-
-    nav ul {
-        gap: 15px;
-
-        flex-wrap: wrap;
-
-        justify-content: center;
-    }
-
-    .hero h1 {
-        font-size: 40px;
-    }
-
-    .hero p {
-        font-size: 18px;
-    }
-
-    .properties {
-        padding: 50px 20px;
-    }
-
-    .properties h1 {
-        font-size: 32px;
-    }
-
-    .about h1,
-    .contact h1 {
-        font-size: 32px;
-    }
-
-    .about-content,
-    .contact-form {
-        padding: 25px;
-    }
 .filters {
-    background: red !important;
+    background: white;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+
+    display: grid;
+
+    grid-template-columns:
+        2fr 1fr 1fr 1fr 1fr auto;
+
+    gap: 12px;
+
+    align-items: center;
 }
+
+.filters input,
+.filters select {
+    width: 100%;
+
+    height: 48px;
+
+    padding: 0 14px;
+
+    border: 1px solid #d5dbe3;
+
+    border-radius: 7px;
+
+    background: white;
+
+    color: #333;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+.filters input:focus,
+.filters select:focus {
+    border-color: #0b5ed7;
+
+    box-shadow:
+        0 0 0 3px rgba(11, 94, 215, 0.12);
+}
+
+#resetButton {
+    height: 48px;
+
+    padding: 0 18px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #0b5ed7;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    white-space: nowrap;
+}
+
+#resetButton:hover {
+    background: #084298;
+    transform: translateY(-2px);
+}
+
+#resultCount {
+    margin-bottom: 25px;
+
+    color: #555;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   PROPERTY CARDS
+========================================= */
+
+.card {
+    background: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.10);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card h2 {
+    font-size: 22px;
+    margin: 20px 20px 10px;
+    color: #222;
+}
+
+.card p {
+    margin: 8px 20px;
+    color: #555;
+}
+
+.card .btn {
+    margin: 20px;
+}
+
+
+/* =========================================
+   PROPERTY DETAILS
+========================================= */
+
+.property-details {
+    max-width: 1100px;
+
+    margin: 60px auto;
+
+    padding: 0 20px;
+}
+
+.back-link {
+    display: inline-block;
+
+    color: #0b5ed7;
+
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+.property-detail-card {
+    background: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =========================================
+   PROPERTY GALLERY
+========================================= */
+
+.property-gallery {
+    padding: 15px;
+    background: white;
+}
+
+.gallery-main {
+    position: relative;
+}
+
+.gallery-main img {
+    width: 100%;
+
+    height: 500px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+}
+
+.gallery-thumbnails {
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 12px;
+
+    overflow-x: auto;
+
+    padding-bottom: 5px;
+}
+
+.gallery-thumbnail {
+    width: 90px;
+
+    height: 65px;
+
+    object-fit: cover;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    opacity: 0.65;
+
+    border: 3px solid transparent;
+
+    transition: 0.3s;
+
+    flex-shrink: 0;
+}
+
+.gallery-thumbnail:hover {
+    opacity: 1;
+}
+
+.gallery-thumbnail.active {
+    opacity: 1;
+
+    border-color: #0b5ed7;
+}
+
+.gallery-arrow {
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 45px;
+
+    height: 45px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: rgba(0, 0, 0, 0.55);
+
+    color: white;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.gallery-arrow:hover {
+    background: #0b5ed7;
+}
+
+.gallery-prev {
+    left: 15px;
+}
+
+.gallery-next {
+    right: 15px;
+}
+
+
+/* =========================================
+   PROPERTY INFORMATION
+========================================= */
+
+.property-info {
+    background: white;
+
+    padding: 35px;
+}
+
+.property-purpose {
+    display: inline-block;
+
+    background: #0b5ed7;
+
+    color: white;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    margin-bottom: 12px;
+}
+
+.property-info h1 {
+    font-size: 38px;
+
+    margin-bottom: 10px;
+
+    color: #222;
+}
+
+.property-info h2 {
+    color: #0b5ed7;
+
+    font-size: 26px;
+
+    margin-bottom: 10px;
+}
+
+.property-location {
+    color: #555;
+
+    font-size: 17px;
+
+    margin-bottom: 25px;
+}
+
+.property-info h3 {
+    font-size: 24px;
+
+    margin-top: 30px;
+
+    margin-bottom: 10px;
+
+    color: #222;
+}
+
+.property-description {
+    color: #555;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   PROPERTY FEATURES
+========================================= */
+
+.property-features {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+
+    margin: 25px 0;
+}
+
+.property-features div {
+    background: #f5f7fa;
+
+    padding: 18px;
+
+    border-radius: 8px;
+
+    text-align: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+.property-features strong {
+    font-size: 20px;
+
+    color: #222;
+}
+
+.property-features span {
+    color: #666;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   CONTACT OWNER
+========================================= */
+
+.contact-owner {
+    margin-top: 30px;
+
+    padding: 14px 25px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #0b5ed7;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.contact-owner:hover {
+    background: #084298;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   ABOUT PAGE
+========================================= */
+
+.about {
+    max-width: 1000px;
+
+    margin: 70px auto;
+
+    padding: 0 25px;
+}
+
+.about h1 {
+    text-align: center;
+
+    font-size: 42px;
+
+    margin-bottom: 30px;
+
+    color: #222;
+}
+
+.about-content {
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.about-content h2 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+
+    color: #0b5ed7;
+}
+
+.about-content p {
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   CONTACT PAGE
+========================================= */
+
+.contact {
+    max-width: 900px;
+
+    margin: 70px auto;
+
+    padding: 0 25px;
+}
+
+.contact h1 {
+    text-align: center;
+
+    font-size: 42px;
+
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    height: 150px;
+
+    resize: vertical;
+}
+
+.contact-form button {
+    border: none;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+
+/* =========================================
+   PROPERTY NOT FOUND
+========================================= */
+
+.property-not-found {
+    background: white;
+
+    padding: 60px 30px;
+
+    text-align: center;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.property-not-found h1 {
+    margin-bottom: 15px;
+}
+
+.property-not-found p {
+    margin-bottom: 25px;
+
+    color: #555;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background: #222;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px;
+
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 900px) {
+
+    .filters {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #resetButton {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 20px;
+    }
+
+    nav ul {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .properties {
+        padding: 50px 20px;
+    }
+
+    .properties h1 {
+        font-size: 32px;
+    }
+
+    .filters {
+        grid-template-columns: 1fr;
+
+        padding: 20px;
+    }
+
+    .filters input,
+    .filters select,
+    #resetButton {
+        height: 48px;
+    }
+
+    .property-details {
+        margin: 35px auto;
+    }
+
+    .property-info {
+        padding: 25px 20px;
+    }
+
+    .property-info h1 {
+        font-size: 28px;
+    }
+
+    .property-info h2 {
+        font-size: 22px;
+    }
+
+    .property-features {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-main img {
+        height: 300px;
+    }
+
+    .gallery-thumbnail {
+        width: 80px;
+        height: 60px;
+    }
+
+    .gallery-arrow {
+        width: 38px;
+        height: 38px;
+
+        font-size: 20px;
+    }
+
+    .about h1,
+    .contact h1 {
+        font-size: 32px;
+    }
+
+    .about-content,
+    .contact-form {
+        padding: 25px;
+    }
 }
